@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mixue Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="../../../../../../../laragon/www/workshop ui semester 4/UAS/ADMIN MyMixue/images/logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../../../../../../laragon/www/workshop ui semester 4/UAS/ADMIN MyMixue/images/mini.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+         
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../../images/faces/admin.png" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+              
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Memasukkan menu baru
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Menyiapkan artikel terbaru
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Memeriksa pesan masuk
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Persiapan promo bulan depan
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Mengecek keseluruhan
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/pengaturan/pengaturan.html">
+                <i class="ti-settings menu-icon"></i>
+                <span class="menu-title">Pengaturan</span>
+                <i class="menu-arrow"></i>
+            </a>
+        </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="ti-server menu-icon"></i>
+              <span class="menu-title">Data Master</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/admin.html">Data ADMIN</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/pelanggan.html">Data PELANGGAN</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/menu.html">Data MENU</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/artikel.html">Data ARTIKEL</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/transaksi/transaksi.html">
+              <i class="ti-money menu-icon"></i>
+              <span class="menu-title">Data Transaksi</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/laporan/basic-table.html">
+              <i class="ti-files menu-icon"></i>
+              <span class="menu-title">Data Laporan</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+
+          
+    
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">DATA MENU</h4>
+                  <p class="card-description">ICE CREAM & TEA <code>MIXUE 1997</code></p>
+                  <button class="btn btn-sm btn-info float-right mb-3" onclick="showAddForm()">Tambah Data</button>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>No.</th>
+                          <th>Gambar</th>
+                          <th>Nama</th>
+                          <th>Kategori</th>
+                          <th>Deskripsi</th>
+                          <th>Harga</th>
+                          <th>Aksi</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><img src="../../images/menu1.png" alt="Chocolate Lucky Sundae" class="img-fluid" width="50"></td>
+                          <td>Chocolate Lucky Sundae</td>
+                          <td>Category 1</td>
+                          <td>Sweet chocolate <br>sauce, Full-bodied<br> ice cream <br>Classic beats <br>the rest!<br> Surprise Ingredient<br> on the Bottom!</td>
+                          <td>Rp.18.000</td>
+                          <td>
+                            <button class="btn btn-sm btn-warning" onclick="showEditForm(1)">Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="confirmDelete(1)">Hapus</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><img src="../../images/menu2.png" alt="Strawberry Mi-shake" class="img-fluid" width="50"></td>
+                          <td>Strawberry Mi-shake</td>
+                          <td>Category 2</td>
+                          <td>Shake before <br>drinking, the <br>taste is <br>more delicious!</td>
+                          <td>Rp.22.000</td>
+                          <td>
+                            <button class="btn btn-sm btn-warning" onclick="showEditForm(2)">Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="confirmDelete(2)">Hapus</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td><img src="../../images/menu3.png" alt="Mango Mi-Sundae" class="img-fluid" width="50"></td>
+                          <td>Mango Mi-Sundae</td>
+                          <td>Category 3</td>
+                          <td>Sweet Mango<br> jam, Full-bodied <br>ice cream <br>Classic beats <br>the rest!</td>
+                          <td>Rp.16.000</td>
+                          <td>
+                            <button class="btn btn-sm btn-warning" onclick="showEditForm(3)">Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="confirmDelete(3)">Hapus</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td><img src="../../images/menu4.jpg" alt="Brown Sugar Pearl Milk Tea" class="img-fluid" width="50"></td>
+                          <td>Brown Sugar Pearl Milk Tea</td>
+                          <td>Category 4</td>
+                          <td>Soft and chewy<br> brown sugar <br>pearls! Coconut</td>
+                          <td>Rp.20.000</td>
+                          <td>
+                            <button class="btn btn-sm btn-warning" onclick="showEditForm(4)">Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="confirmDelete(4)">Hapus</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td><img src="../../images/menu5.jpg" alt="Supreme Mixed Milk Tea" class="img-fluid" width="50"></td>
+                          <td>Supreme Mixed Milk Tea</td>
+                          <td>Category 5</td>
+                          <td>A variety of <br>condiments,<br> a large cup!</td>
+                          <td>Rp.22.000</td>
+                          <td>
+                            <button class="btn btn-sm btn-warning" onclick="showEditForm(5)">Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="confirmDelete(5)">Hapus</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td><img src="../../images/menu6.jpg" alt="Pearl Milk Tea" class="img-fluid" width="50"></td>
+                          <td>Pearl Milk Tea</td>
+                          <td>Category 6</td>
+                          <td>Mellow and <br>full-bodied<br> with chewy <br>pearls How tasty!</td>
+                          <td>Rp.22.000</td>
+                          <td>
+                            <button class="btn btn-sm btn-warning" onclick="showEditForm(6)">Edit</button>
+                            <button class="btn btn-sm btn-danger" onclick="confirmDelete(6)">Hapus</button>
+                          </td>
+                        </tr>
+                        <!-- Tambahkan baris data lainnya di sini -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal Tambah/Edit Data -->
+      <style>
+        .modal-content {
+          width: 50%;
+          margin: auto;
+          padding: 20px;
+          position: relative;
+        }
+      
+        .close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 24px;
+          cursor: pointer;
+        }
+      </style>
+      
+      <div id="modalAddData" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h4 id="formTitle">Tambah Data Baru</h4>
+          <form id="addForm" onsubmit="return false;">
+            <div class="form-group">
+              <label>Gambar</label>
+              <input type="file" name="img[]" class="file-upload-default">
+              <div class="input-group col-xs-12">
+                <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                <span class="input-group-append">
+                  <button class="file-upload-browse btn btn-danger" type="button">Upload</button>
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text" class="form-control" id="nama" placeholder="Nama">
+            </div>
+            <div class="form-group">
+              <label for="kategori">Kategori</label>
+              <input type="text" class="form-control" id="kategori" placeholder="Kategori">
+            </div>
+            <div class="form-group">
+              <label for="deskripsi">Deskripsi</label>
+              <textarea class="form-control" id="deskripsi" placeholder="Deskripsi"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="harga">Harga</label>
+              <input type="text" class="form-control" id="harga" placeholder="Harga">
+            </div>
+            <button class="btn btn-primary" onclick="saveData()">Save</button>
+          </form>
+        </div>
+      </div>
+      
+      <script>
+        let editDataIdMenu = null; // Variable untuk menyimpan id data yang akan diedit
+      
+        // Function untuk menampilkan modal tambah data
+        function showAddForm() {
+          editDataIdMenu = null; // Reset editDataIdMenu
+          var modal = document.getElementById('modalAddData');
+          modal.style.display = "block";
+          document.getElementById('formTitle').textContent = 'Tambah Data Baru';
+          clearFormMenu();
+        }
+      
+        // Function untuk menampilkan modal edit data
+        function showEditForm(id) {
+          editDataIdMenu = id; // Set id data yang akan diedit
+          var modal = document.getElementById('modalAddData');
+          modal.style.display = "block";
+          document.getElementById('formTitle').textContent = 'Edit Data';
+          // Isi form dengan data yang ada (ini simulasi, seharusnya ambil data dari server)
+          var rowData = getRowDataByIdMenu(id); // Misalnya fungsi untuk mendapatkan data dari server
+          document.getElementById('nama').value = rowData.nama;
+          document.getElementById('kategori').value = rowData.kategori;
+          document.getElementById('deskripsi').value = rowData.deskripsi;
+          document.getElementById('harga').value = rowData.harga;
+        }
+      
+        // Function untuk menutup modal
+        function closeModal() {
+          var modal = document.getElementById('modalAddData');
+          modal.style.display = "none";
+          clearFormMenu(); // Bersihkan form setelah modal ditutup
+        }
+      
+        // Function untuk membersihkan form
+        function clearFormMenu() {
+          document.getElementById('nama').value = '';
+          document.getElementById('kategori').value = '';
+          document.getElementById('deskripsi').value = '';
+          document.getElementById('harga').value = '';
+        }
+      
+        // Function untuk menyimpan data (simulasi)
+        function saveData() {
+          var modalTitle = document.getElementById('formTitle').textContent;
+          if (modalTitle === 'Tambah Data Baru') {
+            // Proses tambah data (simulasi)
+            alert("Data menu telah ditambah!");
+          } else if (modalTitle === 'Edit Data') {
+            // Proses edit data (simulasi)
+            alert("Data menu telah diupdate!");
+          }
+          closeModal();
+        }
+      
+        // Function untuk konfirmasi hapus data
+        
+    // Function untuk konfirmasi hapus data
+    function confirmDelete(id) {
+      var confirmDelete = confirm("Anda yakin ingin menghapus data ini?");
+      if (confirmDelete) {
+        // Proses hapus data (simulasi)
+        alert("Data menu telah dihapus!");
+        // Tambahan untuk menghapus baris dari tabel
+        var table = document.getElementById("menuTable");
+        var row = document.getElementById("rowMenu-" + id);
+        table.deleteRow(row.rowIndex - 1); // -1 karena index dimulai dari 0 dan ada header
+      }
+    }
+
+    // Fungsi sederhana untuk mendapatkan data berdasarkan ID (simulasi)
+    function getRowDataByIdMenu(id) {
+      // Ini hanya contoh, seharusnya ambil data dari server atau dari struktur data yang sesuai
+      switch (id) {
+        case 1:
+          return {
+            id: 1,
+            nama: "Chocolate Lucky Sundae",
+            kategori: "Category 1",
+            deskripsi: "Sweet chocolate sauce, Full-bodied ice cream Classic beats the rest! Surprise Ingredient on the Bottom!",
+            harga: "Rp.18.000"
+          };
+        case 2:
+          return {
+            id: 2,
+            nama: "Strawberry Mi-shake",
+            kategori: "Category 2",
+            deskripsi: "Shake before drinking, the taste is more delicious!",
+            harga: "Rp.22.000"
+          };
+        case 3:
+          return {
+            id: 3,
+            nama: "Mango Mi-Sundae",
+            kategori: "Category 3",
+            deskripsi: "Sweet Mango jam, Full-bodied ice cream Classic beats the rest!",
+            harga: "Rp.16.000"
+          };
+        case 4:
+          return {
+            id: 4,
+            nama: "Brown Sugar Pearl Milk Tea",
+            kategori: "Category 4",
+            deskripsi: "Soft and chewy brown sugar pearls! Coconut",
+            harga: "Rp.20.000"
+          };
+        case 5:
+          return {
+            id: 5,
+            nama: "Supreme Mixed Milk Tea",
+            kategori: "Category 5",
+            deskripsi: "A variety of condiments, a large cup!",
+            harga: "Rp.22.000"
+          };
+        case 6:
+          return {
+            id: 6,
+            nama: "Pearl Milk Tea",
+            kategori: "Category 6",
+            deskripsi: "Mellow and full-bodied with chewy pearls How tasty!",
+            harga: "Rp.22.000"
+          };
+        default:
+          return {};
+      }
+    }
+</script>
+</div>
+      
+    
+          <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>

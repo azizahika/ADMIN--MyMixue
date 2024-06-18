@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mixue Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="../../../../../../../laragon/www/workshop ui semester 4/UAS/ADMIN MyMixue/images/logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../../../../../../laragon/www/workshop ui semester 4/UAS/ADMIN MyMixue/images/mini.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+         
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../../images/faces/admin.png" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+              
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Memasukkan menu baru
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Menyiapkan artikel terbaru
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Memeriksa pesan masuk
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Persiapan promo bulan depan
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Mengecek keseluruhan
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/pengaturan/pengaturan.html">
+                <i class="ti-settings menu-icon"></i>
+                <span class="menu-title">Pengaturan</span>
+                <i class="menu-arrow"></i>
+            </a>
+        </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="ti-server menu-icon"></i>
+              <span class="menu-title">Data Master</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/admin.html">Data ADMIN</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/pelanggan.html">Data PELANGGAN</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/menu.html">Data MENU</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/master/artikel.html">Data ARTIKEL</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/transaksi/transaksi.html">
+              <i class="ti-money menu-icon"></i>
+              <span class="menu-title">Data Transaksi</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/laporan/basic-table.html">
+              <i class="ti-files menu-icon"></i>
+              <span class="menu-title">Data Laporan</span>
+              <i class="menu-arrow"></i>
+            </a>
+          </li>
+
+          
+    
+         
+    
+      </nav>
+    
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+          
+            <div class="col-lg-12 stretch-card">
+              <div class="card">
+                  <div class="card-body">
+                      <h4 class="card-title">TRANSAKSI PENJUALAN</h4>
+                      <p class="card-description">
+                          ICE CREAM & TEA <code> MIXUE 1997</code>
+                      </p>
+                      <div class="table-responsive pt-3">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>No. Transaksi</th>
+                                    <th>Pelanggan</th>
+                                    <th>Tanggal Pesan</th>
+                                    <th>Alamat</th>
+                                    <th>Catatan</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-info">
+                                    <td>1</td>
+                                    <td>MX-14062023-001</td>
+                                    <td>Bara Razan</td>
+                                    <td>20 Mei 2024</td>
+                                    <td>Jl. Gatot Subroto No. 123</td>
+                                    <td>Catatan 1</td>
+                                    <td>Rp. 65.000</td>
+                                    <td><label class="badge badge-success">Completed</label></td>
+                                    <td>
+                                        <!-- Tambahkan tombol atau link aksi -->
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Hapus</button>
+                                        <button class="btn btn-sm btn-info">Detail</button>
+                                    </td>
+                                </tr>
+                                <tr class="table-warning">
+                                    <td>2</td>
+                                    <td>MX-14062023-002</td>
+                                    <td>Rafi Nugraha</td>
+                                    <td>20 Mei 2024</td>
+                                    <td>Jl. Thamrin No. 456</td>
+                                    <td>Catatan 2</td>
+                                    <td>Rp. 30.000</td>
+                                    <td><label class="badge badge-success">Completed</label></td>
+                                    <td>
+                                        <!-- Tambahkan tombol atau link aksi -->
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Hapus</button>
+                                        <button class="btn btn-sm btn-info">Detail</button>
+                                    </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>3</td>
+                                    <td>MX-14062023-003</td>
+                                    <td>Afrista Hesti</td>
+                                    <td>21 Mei 2024</td>
+                                    <td>Jl. Sudirman No. 789</td>
+                                    <td>Catatan 3</td>
+                                    <td>Rp. 105.000</td>
+                                    <td><label class="badge badge-success">Completed</label></td>
+                                    <td>
+                                        <!-- Tambahkan tombol atau link aksi -->
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Hapus</button>
+                                        <button class="btn btn-sm btn-info">Detail</button>
+                                    </td>
+                                </tr>
+                                <tr class="table-success">
+                                    <td>4</td>
+                                    <td>MX-14062023-004</td>
+                                    <td>Affiani Elza</td>
+                                    <td>21 Mei 2024</td>
+                                    <td>Jl. Diponegoro No. 321</td>
+                                    <td>Catatan 4</td>
+                                    <td>Rp. 80.000</td>
+                                    <td><label class="badge badge-success">Completed</label></td>
+                                    <td>
+                                        <!-- Tambahkan tombol atau link aksi -->
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Hapus</button>
+                                        <button class="btn btn-sm btn-info">Detail</button>
+                                    </td>
+                                </tr>
+                                <tr class="table-danger">
+                                    <td>5</td>
+                                    <td>MX-14062023-005</td>
+                                    <td>Tika Cahya</td>
+                                    <td>22 Mei 2024</td>
+                                    <td>Jl. Pahlawan No. 567</td>
+                                    <td>Catatan 5</td>
+                                    <td>Rp. 55.000</td>
+                                    <td><label class="badge badge-success">Completed</label></td>
+                                    <td>
+                                        <!-- Tambahkan tombol atau link aksi -->
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Hapus</button>
+                                        <button class="btn btn-sm btn-info">Detail</button>
+                                    </td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <td>6</td>
+                                    <td>MX-14062023-006</td>
+                                    <td>Hana Adistya</td>
+                                    <td>22 Mei 2024</td>
+                                    <td>Jl. Asia Afrika No. 789</td>
+                                    <td>Catatan 6</td>
+                                    <td>Rp. 35.000</td>
+                                    <td><label class="badge badge-success">Completed</label></td>
+                                    <td>
+                                        <!-- Tambahkan tombol atau link aksi -->
+                                        <button class="btn btn-sm btn-primary">Edit</button>
+                                        <button class="btn btn-sm btn-danger">Hapus</button>
+                                        <button class="btn btn-sm btn-info">Detail</button>
+
+                                    </td>
+                                </tr>
+                                <!-- Tambahkan baris data lainnya sesuai kebutuhan -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/settings.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
